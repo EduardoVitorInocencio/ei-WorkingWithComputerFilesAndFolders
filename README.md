@@ -1,49 +1,36 @@
-
 # 📁 Pathlib na Prática com Python
 
-> Exemplos simples e progressivos para trabalhar com **arquivos e diretórios** usando `pathlib`
+> Um repositório com exemplos **práticos, progressivos e comentados** para aprender a trabalhar com **arquivos e diretórios** usando `pathlib`.
 
 ---
 
-## 📌 Sobre o projeto
+## 📌 Visão geral do projeto
 
-Este repositório reúne **exemplos práticos** de uso do `pathlib`, a biblioteca padrão do Python para manipulação de caminhos.
+Este repositório foi criado para servir como **material de apoio e estudo** sobre manipulação de arquivos no Python, utilizando a biblioteca `pathlib`.
 
-✅ Do básico  
-✅ Até cenários reais do dia a dia  
+A abordagem é **progressiva**, começando pelos conceitos mais básicos e avançando até **casos reais** encontrados em projetos profissionais.
+
+✅ Exemplos simples  
+✅ Código fácil de ler  
+✅ Situações do mundo real  
 
 ---
 
 ## 🧠 O que é o `pathlib`
 
-- Biblioteca padrão do Python
-- Trabalha com caminhos de forma **orientada a objetos**
-- Substitui o uso do `os.path`
+O `pathlib` é uma **biblioteca padrão do Python** usada para trabalhar com caminhos de arquivos e diretórios.
 
-### ⭐ Vantagens
-- Código mais legível
-- Menos erros
-- Compatível com diferentes sistemas operacionais
+Ela permite:
+- Criar caminhos
+- Navegar entre pastas
+- Manipular arquivos
+- Fazer operações comuns de forma segura
 
----
+Tudo isso usando **programação orientada a objetos**, o que torna o código mais intuitivo.
 
-## 🚀 Por que usar `pathlib`
+### 🔄 Comparação com `os.path`
+Antes:
+```python
+import os
 
-Muito utilizado em projetos reais, como:
-
-- 📂 Organização de diretórios
-- 🔄 Processamento de dados (ETL)
-- 🖼️ Gerenciamento de mídias
-- 📦 Compactação e extração de arquivos
-- 🧹 Limpeza automática de pastas
-
-👉 API simples, moderna e poderosa
-
----
-
-## 🗂️ Estrutura do repositório
-
-- Cada exemplo está em um arquivo no formato:
-
-```text
-exXX.py
+path = os.path.join("pasta", "arquivo.txt")
