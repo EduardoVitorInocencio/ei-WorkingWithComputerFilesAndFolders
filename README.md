@@ -48,7 +48,6 @@ CLI (linha de comando)
 Organizador de downloads
 Backup automático
 
-📌 Resumo 😂😂
 
 pathlib facilita muito trabalhar com arquivos no Python de forma limpa e eficiente.
 <comentario adicionado>
