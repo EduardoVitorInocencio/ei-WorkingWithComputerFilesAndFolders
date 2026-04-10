@@ -1,18 +1,18 @@
-📂 Manipulação de Arquivos com Pathlib (Python)
+📂 Manipulação de Arquivos com Pathlib (Python) 😂😂
 
 Exemplos práticos usando pathlib para trabalhar com arquivos e pastas no Python — do básico até tarefas mais reais.
 
-🧠 O que é Pathlib?
+🧠 O que é Pathlib? 😂😂
 
 Biblioteca padrão do Python para lidar com caminhos de forma mais simples e organizada (melhor que os.path).
 
-🚀 Pra que serve?
+🚀 Pra que serve? 😂😂
 Organizar arquivos
 Renomear em massa
 Buscar arquivos
 Criar/remover arquivos
 Compactar e extrair ZIP
-📚 Exemplos
+📚 Exemplos 😂😂
 Ex01: básico (Path, exists, propriedades, iterdir)
 Ex02: renomear arquivos
 Ex03: renomear com base na pasta
@@ -24,21 +24,21 @@ Ex08: compactar (ZIP)
 Ex09: extrair ZIP
 Ex10: buscar arquivos (rglob)
 Ex11: deletar arquivos
-⚠️ Boas práticas
+⚠️ Boas práticas 😂😂
 Verifique se é arquivo (is_file())
 Cuidado ao deletar (unlink())
 Evite sobrescrever sem querer
 Valide arquivos ZIP antes de extrair
-📈 Evolução
+📈 Evolução 😂😂
 Básico
 Navegação
 Renomeação
 Automação
 Casos reais
-💡 Ideias de melhoria
+💡 Ideias de melhoria 😂😂
 CLI (linha de comando)
 Organizador de downloads
 Backup automático
-📌 Resumo
+📌 Resumo 😂😂
 
 pathlib facilita muito trabalhar com arquivos no Python de forma limpa e eficiente.
