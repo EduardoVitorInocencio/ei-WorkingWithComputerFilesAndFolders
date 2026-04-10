@@ -62,5 +62,3 @@ Montar pipeline de arquivos
 Conclusão
 
 Aprender pathlib é essencial para trabalhar com automação e arquivos em Python.
-
-Explore os exemplos para ver tudo na prática
