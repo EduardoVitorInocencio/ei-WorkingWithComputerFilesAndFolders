@@ -1,68 +1,73 @@
-## Visão geral
-- Repositório com exemplos práticos usando `pathlib` no Python  
-- Foco em manipulação de arquivos e diretórios  
-- Abordagem progressiva: do básico a cenários reais  
+# 📁 Pathlib na prática
 
-## O que é o Pathlib
-- Biblioteca padrão do Python  
-- Trabalha com caminhos de forma orientada a objetos  
-- Substitui `os.path`  
-- Benefícios:
-  - Código mais legível  
-  - Mais seguro  
-  - Mais portátil  
+## Sobre o projeto
+Este repositório contém exemplos práticos de uso do **pathlib** em Python para trabalhar com **arquivos e diretórios**.  
+Os exemplos vão do básico até situações comuns do dia a dia.
 
-## Por que usar
-- Essencial em projetos reais para:
-  - Organização de diretórios  
-  - Processamento de dados (ETL)  
-  - Gerenciamento de mídia  
-  - Compactação e extração  
-  - Limpeza de arquivos  
-- API simples e poderosa  
+## O que é o pathlib
+- Biblioteca padrão do Python
+- Trabalha com caminhos usando objetos
+- Substitui o uso de `os.path`
 
-## Estrutura dos exemplos
-- Arquivos `exXX.py`, cada um com um conceito específico  
+### Vantagens
+- Código mais legível
+- Mais seguro
+- Funciona bem em diferentes sistemas operacionais
 
-### Conteúdo dos exemplos
-- Ex01: Introdução ao `Path`, propriedades e navegação  
-- Ex02: Renomeação de arquivos  
-- Ex03: Renomeação baseada na pasta pai  
-- Ex04: Nome baseado na hierarquia de pastas  
-- Ex05: Renomeação com timestamp  
-- Ex06: Alteração de extensão de arquivos  
-- Ex07: Criação de múltiplos arquivos  
-- Ex08: Compactação com `zipfile`  
-- Ex09: Extração de arquivos ZIP  
-- Ex10: Busca de arquivos com `rglob()`  
-- Ex11: Limpeza de arquivos com `unlink()`  
+## Por que usar pathlib
+Muito usado em projetos reais, como:
+- Organização de pastas
+- Processamento de dados
+- Gerenciamento de arquivos e mídia
+- Compactação e extração de arquivos
+- Limpeza de diretórios
+
+A API é simples e poderosa.
+
+## Estrutura do repositório
+- Os exemplos seguem o padrão `exXX.py`
+- Cada arquivo cobre um conceito específico
+
+## Exemplos disponíveis
+- **Ex01** – Introdução e navegação com `Path`
+- **Ex02** – Renomear arquivos
+- **Ex03** – Renomear usando a pasta pai
+- **Ex04** – Nome baseado na hierarquia de pastas
+- **Ex05** – Renomear com timestamp
+- **Ex06** – Alterar extensão de arquivos
+- **Ex07** – Criar vários arquivos
+- **Ex08** – Compactar arquivos (ZIP)
+- **Ex09** – Extrair arquivos ZIP
+- **Ex10** – Buscar arquivos com `rglob()`
+- **Ex11** – Deletar arquivos com `unlink()`
 
 ## Boas práticas
-- Verificar se é arquivo (`is_file()`)  
-- Evitar sobrescrever arquivos desnecessariamente  
-- Cuidado com operações destrutivas  
-- Validar caminhos ao extrair ZIP  
-- Evitar caracteres inválidos em nomes  
+- Sempre verificar se é arquivo (`is_file()`)
+- Evitar sobrescrever arquivos sem necessidade
+- Ter cuidado com operações destrutivas
+- Validar caminhos ao extrair ZIP
+- Usar nomes de arquivos válidos
 
-## Evolução do aprendizado
-1. Fundamentos  
-2. Navegação em diretórios  
-3. Manipulação de nomes  
-4. Automação  
-5. Operações reais (ZIP, busca, limpeza)  
+## Caminho de aprendizado
+1. Conceitos básicos
+2. Navegação em diretórios
+3. Manipulação de nomes
+4. Automação
+5. Casos reais (ZIP, busca, limpeza)
 
 ## Próximos passos
-- Criar CLI (linha de comando)  
-- Organizador de downloads  
-- Sistema de backup  
-- Pipeline de processamento de arquivos  
+- Criar uma CLI (linha de comando)
+- Organizador de downloads
+- Sistema de backup
+- Pipeline de processamento de arquivos
 
 ## Conclusão
-- `pathlib` é essencial para trabalhar com:
-  - Automação  
-  - Dados  
-  - Sistema de arquivos  
-- Recomenda-se explorar os exemplos práticos  
+O **pathlib** é essencial para trabalhar com:
+- Automação
+- Dados
+- Sistema de arquivos
+
+Explore os exemplos para fixar o aprendizado.
 
 ## Autor
-- Projeto focado em revisão de manipulação de arquivos com Python
+Projeto criado para revisar e praticar manipulação de arquivos em Python.
