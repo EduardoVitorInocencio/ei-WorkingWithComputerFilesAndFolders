@@ -54,3 +54,7 @@ Cada arquivo aborda um tema:
 
 ## 🧑‍💻 Autor
 Projeto criado para revisão prática de manipulação de arquivos.
+
+## Alterações feitas pela Gigi
+
+- Realizando alterações simples no readme.md
