@@ -1,200 +1,68 @@
-# 📂 Manipulação de Arquivos com Pathlib (Python)
+📂 Automação e Manipulação de Arquivos com Pathlib
+Este repositório é um guia prático e progressivo sobre a biblioteca pathlib. O objetivo é demonstrar como substituir métodos arcaicos (como os.path) por uma abordagem orientada a objetos, tornando a automação de sistemas de arquivos mais elegante e robusta.
 
-Este repositório contém uma coleção de exemplos práticos utilizando a biblioteca `pathlib` do Python para manipulação de arquivos e diretórios.
+🧠 Por que abandonar o os.path?
+O pathlib trata caminhos não apenas como strings, mas como objetos. Isso traz vantagens imediatas:
 
-O objetivo é demonstrar, de forma progressiva, como automatizar tarefas comuns do dia a dia, evoluindo de operações simples até cenários mais próximos do mundo real.
+Legibilidade: Código que parece uma frase, não uma concatenação complexa.
 
----
+Portabilidade: O mesmo código funciona perfeitamente em Windows, Linux e macOS.
 
-## 🧠 O que é o Pathlib?
+Segurança: Métodos integrados para evitar erros comuns de permissão e existência.
 
-O `pathlib` é uma biblioteca padrão do Python que fornece uma forma **orientada a objetos** para lidar com caminhos de arquivos e diretórios.
+🛠️ O que você vai encontrar aqui?
+O aprendizado é dividido em 11 módulos práticos. Cada script exXX.py resolve um problema real:
 
-Ele substitui abordagens mais antigas como `os.path`, tornando o código:
+🔰 Nível 1: Fundamentos
+Ex01 — Introdução: Atributos básicos (stem, suffix, name) e verificação de existência.
 
-- Mais legível
-- Mais seguro
-- Mais portátil
+Ex07 — Criação em lote: Como utilizar o touch() para gerar arquivos rapidamente.
 
----
+Ex10 — Busca Avançada: Diferença entre glob e rglob para varreduras recursivas.
 
-## Por que usar Pathlib?
+🔄 Nível 2: Transformação
+Ex02 a 04 — Renomeação Inteligente: Desde trocas simples até nomes baseados na hierarquia de pastas.
 
-Em projetos reais, manipulação de arquivos é essencial:
+Ex05 — Timestamps: Integração com stat() para nomear arquivos com base na data de criação.
 
-- Organização de diretórios
-- Processamento de dados (ETL)
-- Gerenciamento de mídia
-- Compactação e extração de arquivos
-- Limpeza de arquivos temporários
+Ex06 — Conversão de Extensões: O poder do with_suffix() para migrar formatos (ex: .txt → .csv).
 
-O `pathlib` facilita todas essas tarefas com uma API simples e poderosa.
+📦 Nível 3: Operações de Sistema
+Ex08 & 09 — Gestão de Pacotes: Compactação e extração de arquivos .zip de forma automatizada.
 
----
+Ex11 — Sanitização: Limpeza segura de diretórios e remoção de resíduos com unlink().
 
-## 📚 Estrutura dos Exemplos
+🚀 Como utilizar este repositório
+Clone o projeto:
 
-Cada arquivo `exXX.py` aborda um conceito específico.  
-Se quiser se aprofundar, abra o arquivo correspondente.
+Bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+Explore a evolução:
+Recomendamos abrir os arquivos na ordem numérica, pois os conceitos de um script são frequentemente reutilizados no próximo.
 
----
+Execute um exemplo:
 
-### 🔹 Ex01 — Introdução ao Pathlib
+Bash
+python ex01.py
+⚠️ Checklist de Boas Práticas
+Ao automatizar arquivos, sempre lembre-se:
 
-- Criação de caminhos com `Path`
-- Verificação de existência (`exists`)
-- Leitura de propriedades:
-  - `name`
-  - `stem`
-  - `suffix`
-- Navegação com `iterdir()`
+[x] Validar tipos: Use is_file() ou is_dir() antes de operar.
 
-📌 Veja: `ex01.py`
+[x] Tratar exceções: Arquivos podem estar abertos ou protegidos pelo sistema.
 
----
+[x] Cuidado Destrutivo: Antes de um unlink(), faça um print do que será apagado para conferir.
 
-### 🔹 Ex02 — Renomeação de arquivos
+[x] Encoding: Ao ler arquivos, prefira sempre encoding='utf-8'.
 
-- Iteração em diretórios
-- Criação de novos nomes
-- Uso de `rename()`
+🎯 Próximos Desafios
+Quer levar esse conhecimento além? Tente implementar:
 
-📌 Veja: `ex02.py`
+Organizador de Downloads: Um script que move arquivos para pastas "Imagens", "Documentos" e "PDFs" automaticamente.
 
----
+Backup Incremental: Copiar apenas arquivos alterados nas últimas 24 horas.
 
-### 🔹 Ex03 — Renomeação com base na pasta pai
+CLI Tool: Transformar esses exemplos em uma ferramenta de linha de comando usando argparse ou click.
 
-- Uso de `glob('**/*.txt')`
-- Estrutura de caminhos (`parts`)
-- Automação baseada em contexto
-
-📌 Veja: `ex03.py`
-
----
-
-### 🔹 Ex04 — Nome baseado na hierarquia
-
-- Extração de subpastas
-- Construção dinâmica de nomes
-- Transformação da estrutura em nome
-
-📌 Veja: `ex04.py`
-
----
-
-### 🔹 Ex05 — Renomeação com timestamp
-
-- Uso de `stat()`
-- Manipulação de datas com `datetime`
-- Padronização de nomes com data
-
-📌 Veja: `ex05.py`
-
----
-
-### 🔹 Ex06 — Alteração de extensão
-
-- Uso de `with_suffix()`
-- Conversão de arquivos (.txt → .csv)
-
-📌 Veja: `ex06.py`
-
----
-
-### 🔹 Ex07 — Criação de múltiplos arquivos
-
-- Uso de `touch()`
-- Geração de arquivos em lote
-
-📌 Veja: `ex07.py`
-
----
-
-### 🔹 Ex08 — Compactação de arquivos
-
-- Uso de `zipfile`
-- Criação de arquivos `.zip`
-- Remoção de arquivos após compactação
-
-📌 Veja: `ex08.py`
-
----
-
-### 🔹 Ex09 — Extração de arquivos ZIP
-
-- Leitura de arquivos compactados
-- Extração com `extractall()`
-- Organização por diretórios
-
-📌 Veja: `ex09.py`
-
----
-
-### 🔹 Ex10 — Busca de arquivos
-
-- Busca recursiva com `rglob()`
-- Filtro por nome (`stem`)
-- Uso de caminhos absolutos
-
-📌 Veja: `ex10.py`
-
----
-
-### 🔹 Ex11 — Limpeza de arquivos
-
-- Remoção de arquivos com `unlink()`
-- Automação de limpeza em diretórios
-
-📌 Veja: `ex11.py`
-
----
-
-## ⚠️ Boas práticas importantes
-
-- Sempre verificar se é arquivo (`is_file()`)
-- Evitar sobrescrever arquivos sem necessidade
-- Cuidado com operações destrutivas (`unlink()`)
-- Validar caminhos ao extrair arquivos ZIP
-- Evitar caracteres inválidos (ex: `:` no Windows)
-
----
-
-## 🧠 Evolução prática
-
-Este repositório segue uma progressão:
-
-1. Fundamentos (`Path`)
-2. Navegação em diretórios
-3. Manipulação de nomes
-4. Automação de arquivos
-5. Operações reais (ZIP, busca, limpeza)
-
----
-
-## 💡 Próximos passos
-
-Você pode evoluir este projeto para:
-
-- CLI (linha de comando)
-- Organizador automático de downloads
-- Sistema de backup
-- Pipeline de processamento de arquivos
-
----
-
-## 📌 Conclusão
-
-O domínio de `pathlib` é essencial para qualquer desenvolvedor Python que deseja trabalhar com:
-
-- automação
-- dados
-- sistemas de arquivos
-
-Explore cada arquivo `.py` para entender a implementação prática.
-
----
-
-## 🧑‍💻 Autor
-
-Projeto desenvolvido com foco em revisar sobre manipulação de arquivos com Python.
+🧑‍💻 Autor
+Desenvolvido para fins de estudo e revisão das melhores práticas em Python. Sinta-se à vontade para contribuir com novos exemplos!
