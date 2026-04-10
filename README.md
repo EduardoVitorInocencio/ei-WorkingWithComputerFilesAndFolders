@@ -48,7 +48,7 @@ Você pode transformar isso em:
 * ferramenta de linha de comando (CLI)
 * organizador de arquivos
 * sistema de backup
-* automação de tarefas
+* automação de tarefas!
 
 ---
 
