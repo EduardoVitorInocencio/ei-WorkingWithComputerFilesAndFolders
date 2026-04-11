@@ -22,4 +22,4 @@ Transformação: Alterar nomes e estruturas dinamicamente.
 Automação: Resolver problemas do mundo real, como processamento de dados e backups.
 
 💡 Veredito
-É o "canivete suíço" para quem quer automatizar tarefas chatas de escritório, organizar downloads ou preparar pipelines de dados sem se perder em strings de caminhos confusas.
+É o "canivete suíço" para quem quer automatizar tarefas chatas de escritório,
