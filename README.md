@@ -1,4 +1,4 @@
-# 📂 Manipulação de Arquivos com Pathlib (Python)
+# Manipulação de Arquivos com Pathlib (Python)
 
 Coleção de exemplos práticos usando a biblioteca `pathlib` para manipulação de arquivos e diretórios em Python.
 
