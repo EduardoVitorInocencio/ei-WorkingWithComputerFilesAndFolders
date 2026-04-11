@@ -1,70 +1,36 @@
-# Manipulação de Arquivos com Pathlib (Python)
+# 📁 Pathlib na Prática com Python
 
-Exemplos práticos usando `pathlib` para trabalhar com arquivos e diretórios no Python — do básico ao uso real.
-
----
-
-## O que é Pathlib?
-
-Biblioteca padrão do Python para manipulação de caminhos de forma **simples, legível e orientada a objetos**.
-Substitui o `os.path` com uma API mais moderna.
+> Um repositório com exemplos **práticos, progressivos e comentados** para aprender a trabalhar com **arquivos e diretórios** usando `pathlib`.
 
 ---
 
-## Para que serve?
+## 📌 Visão geral do projeto
 
-* Organizar arquivos e pastas
-* Automatizar tarefas
-* Processar dados
-* Compactar e extrair arquivos
-* Limpar diretórios
+Este repositório foi criado para servir como **material de apoio e estudo** sobre manipulação de arquivos no Python, utilizando a biblioteca `pathlib`.
 
----
+A abordagem é **progressiva**, começando pelos conceitos mais básicos e avançando até **casos reais** encontrados em projetos profissionais.
 
-## Exemplos
-
-Cada arquivo (`ex01.py` até `ex11.py`) mostra um caso prático:
-
-* **Ex01** — Conceitos básicos (`Path`, `exists`, propriedades)
-* **Ex02–Ex05** — Renomeação de arquivos (simples, com contexto e data)
-* **Ex06** — Alteração de extensão
-* **Ex07** — Criação de arquivos em lote
-* **Ex08–Ex09** — Compactação e extração (ZIP)
-* **Ex10** — Busca de arquivos
-* **Ex11** — Limpeza de arquivos
+✅ Exemplos simples  
+✅ Código fácil de ler  
+✅ Situações do mundo real  
 
 ---
 
-## Boas práticas
+## 🧠 O que é o `pathlib`
 
-* Verifique com `is_file()` antes de agir
-* Evite sobrescrever arquivos
-* Cuidado com `unlink()` (remove arquivos)
-* Valide arquivos ao extrair ZIP
+O `pathlib` é uma **biblioteca padrão do Python** usada para trabalhar com caminhos de arquivos e diretórios.
 
----
+Ela permite:
+- Criar caminhos
+- Navegar entre pastas
+- Manipular arquivos
+- Fazer operações comuns de forma segura
 
-## Progressão
+Tudo isso usando **programação orientada a objetos**, o que torna o código mais intuitivo.
 
-1. Fundamentos
-2. Navegação
-3. Manipulação
-4. Automação
-5. Casos reais
+### 🔄 Comparação com `os.path`
+Antes:
+```python
+import os
 
----
-
-## Ideias para evoluir
-
-* CLI (linha de comando)
-* Organizador de arquivos
-* Sistema de backup
-* Pipeline de dados
-
----
-
-## Conclusão
-
-`pathlib` é essencial para automação e manipulação de arquivos em Python.
-Veja os exemplos para aprender na prática.
-
+path = os.path.join("pasta", "arquivo.txt")
