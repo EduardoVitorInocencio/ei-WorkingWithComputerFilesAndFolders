@@ -11,7 +11,7 @@ Substitui o `os.path` com uma API mais moderna.
 
 ---
 
-## Para que serve?
+## Pa
 
 * Organizar arquivos e pastas
 * Automatizar tarefas
